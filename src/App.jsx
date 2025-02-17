@@ -3,7 +3,7 @@ import data from './data.json';
 import { useState } from 'react';
 
 function App() {
-    const [steps] = useState(0);
+    const [steps] = useState(data);
     const [activeIndex, setActiveIndex] = useState(0);
 
     const isFirstStep = activeIndex === 0;
